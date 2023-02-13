@@ -100,7 +100,8 @@ class convertVector:
                 x_all.append(x)
                 y_all.append(y)
     def calc_xy(self, o, c):
-        x = np.concatenate([o, c], axis=1)
+        #x = np.concatenate([o, c], axis=1)
+        x = o
         y = o
         return x, y
     # メロディを表すone-hotベクトル、コードを表すmany-hotベクトルの系列に対して、

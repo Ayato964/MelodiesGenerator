@@ -20,6 +20,7 @@ class xmlLoader(convertVector):
         self.setKeyRoot(root)
         x_all = []
         y_all = []
+        print("-----------XML LOADING -----------------")
         for f in glob.glob(self.DIR + "/*.xml"):
             print(f)
             score = music21.converter.parse(f)
@@ -34,6 +35,7 @@ class xmlLoader(convertVector):
 
         x_all = np.array(x_all)
         y_all = np.array(y_all)
+        print("----------------------------------------")
         return x_all, y_all
                 
 
